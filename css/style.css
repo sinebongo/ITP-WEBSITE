@@ -15,42 +15,46 @@ body{
 
 li, a, button {
     font-family:  "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 16px;
-    color: white;
+    color: grey;
     text-decoration: none;
 }
 
-header {
+.header1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10px;
-    background-color: darkgrey;
+    background-color: white;
 }
 
 .logo {
     cursor: pointer;
     height: 100px;
-    background-color: darkgrey;
+
 }
 
 .nav {
-    display: flex;
+    display: block;
+    width: 100%;
     list-style: none;
-    background-color: darkgrey;
+    text-align: end;
     overflow: hidden;
+    
+    
 }
 
 .nav li {
     display: inline;
     padding: 0px 20px;
-    background-color: darkgrey ;
+    background-color: #D9D9D9;
 }
 
 .nav a {
     transition: all o.3s ease-in-out;
-    background-color: darkgrey ;
+    background-color: #D9D9D9;
+    color: white;
 }
 
 .nav li a:hover {
@@ -58,10 +62,10 @@ header {
 }
 
 button{
-    border-color: #284B63;
+    border: none;
     padding: 9px 25px;
-    border-radius: 10%;
-    background-color: darkgrey;
+    background-color: #D9D9D9;
+    color: white;
 
 
 }
@@ -70,23 +74,24 @@ button:hover{
 }
 
 ul {
-    background-color: darkgrey;
+    background-color: #D9D9D9;
 }
 
 h2{
-    background-color: darkgrey;
+    background-color: white;
     padding: 0%;
     text-align: left;
+    
 }
 figcaption{
-    background-color: darkgrey;
+    background-color: white;
     font-size: 200%;
     align-self: center;
     padding-left: 20px;
-    color: white;
+    color: grey;
 }
 .log{
-    background-color: darkgrey;
+    background-color: white;
     display: inline-flex;
     
 }
@@ -95,23 +100,38 @@ figcaption{
     display: inline;
     background-image: url("../images/pen.jpg");
     width: 100%;
-    justify-content: space-between;
+    height: 100%;
+    align-content: center;
+    margin: 50px;
+
 }
 
-.teach1,.teach2,.teach3,.teach4,.teach5,.teach6{
-    
-    margin: 10px;
-    padding: 20px;
-    height: 50%;
+.teach1,.teach2,.teach3{
+    margin: 50px;
+    padding-left: 10px;
     width: 25%;
     background-color: #284B63;
-    opacity: 0.6;
-    
+    opacity: 0.6;   
+}
+.teach1{
+    float: left;
+    margin-left: 100px;
+    display: block;
+    height: 100%;
+    align-content: space-around;
+}
+.teach2{
+    float: left;
+    display: block;
+    height: 100%;
+    align-content: space-around;
     
 }
-
 .teach3{
-    float: right;
+    float:left;
+    display: block;
+    height: 100%;
+    align-content: space-around;
 }
 
 p{ 
@@ -129,4 +149,38 @@ h3{
     font-size: 20px;
     text-align: center;
     color: white;
+}
+.h1 {
+    float: left;
+    padding: 20px;
+    color: grey;
+}
+
+.log2{
+    cursor: pointer;
+    height: 100px;
+    background-color: white;
+}
+.header2 {
+    display: flex; 
+    align-items: center;
+    padding: 30px 10px;
+    background-color: white;
+}
+.lg1{
+    background-color:rgba(0, 0, 0, 0.76);
+}
+.row{
+    align-self: center;
+}
+.lg2{
+    background-color:rgba(0, 0, 0, 0.25); 
+    padding:10px 20px 20px 20px;
+    top:30%; left:25%;right:25%;
+    border-radius: 10px;
+    position:absolute;
+    align-self:center
+}
+.form-group{
+    align-self:center;display: inline-block;padding: 10px;
 }
