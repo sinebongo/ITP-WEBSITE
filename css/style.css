@@ -29,7 +29,9 @@ li, a, button {
     padding: 30px 10px;
     background-color: white;
 }
-
+figcaption{
+    font-size: 10vw;
+}
 .logo {
     cursor: pointer;
     height: 100px;
