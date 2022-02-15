@@ -266,7 +266,7 @@ h3{
     
     .found1 img{
         margin-left: 20vw;
-        
+            
     }/* rules for small screens */
 
 }
@@ -291,6 +291,7 @@ h3{
 }
 .para2{
     flex: 1;
+    color: #284B63;
 }
 .h11{
     text-align: center;
