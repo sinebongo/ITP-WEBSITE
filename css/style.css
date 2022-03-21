@@ -181,58 +181,6 @@ h3{
     background-color: white;
 }
 
-.form1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-}
-.login-form{
-    background-color: #284B63;
-    opacity: 0.6;
-    padding: 10px;
-    margin-top: 100px;
-    border-radius: 5px;
-}
-.form-input-material {
-    --input-default-border-color: white;
-    --input-border-bottom-color: white;
-    
-}
-.btn {
-    padding: 8px 20px;
-    border-radius: 0;
-    overflow: hidden;
-}
-.login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 40px;
-    color: white;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
-    0 1px 1px rgba(128, 128, 128, 0.155),
-    0 2.1px 2.1px rgba(128, 128, 128, 0.195),
-    0 4.4px 4.4px rgba(128, 128, 128, 0.241),
-    0 12px 12px rgba(128, 128, 128, 0.35);
-}
-
-.form-input-material {
-    margin: 12px 0;
-    }
-
-.btn {
-        width: 100%;
-        margin: 18px 0 9px 0;
-    }
-
-.form-control-material{
-    display: flex;
-}
-
 
 @media screen and (min-width: 740px){
     /* rules for big screens */
@@ -242,64 +190,117 @@ h3{
     }
 
 .founders{
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-content: center;
     
 }
-.found1 img{
-    margin-left: 15vw;
-    
+.bongo{
+    width: 10vw;
+    height: auto;
 }
 
 }
 @media screen and (max-width: 739px) {
+     /* rules for Small screens */
     .sec2{
         background-color: white;
-        height: 200vh;
+        height: 130vh;
     }
     .founders{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-betwen;
         flex-direction: column;
+        padding: 0%;
     }  
     
-    .found1 img{
-        margin-left: 18vw;
-
-    }/* rules for small screens */
-
-}
-
-.bongo{
-    flex: 1;
-    width: 200px;
-    border-radius: 50%;
-    height:250px;
+    .bongo{
+        width: 300%;
+        
+    }
     
 }
-.found1{
-    background-color: white;
-    margin: 30px;
-}
+
 
 .sine{
-    color: #284B63;
+    
+    color: grey;
     text-transform:capitalize;
-    text-align: center;
+    text-align: left;
     padding: 20px;
 }
 .para2{
-    flex: 1;
-    color: #284B63;
+    text-align: left;
+    color: grey;
     font-size: 20px;
+    padding: 20px;
+    
 }
 .h11{
     text-align: center;
-    color: #284B63 ;
+    color: grey ;
     font-size: 30px;
-    padding: 30px;
-    margin: 30px;
-    font-weight: bolder;
-    font-family: "Montserrat" sans-serif;
+    padding-top: 50px;
+    font-size: 400%;
+}
+.found1{
+    display: flex;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+/* HORIZONTAL SCROLL */
+.scroll-container{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px 70px 5px 20px;
+    background: white;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.gridscroll{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.gridscroll img {
+    margin-right:22px;
+    height: 300px;
+}
+
+.team{
+    display: inline;
+    
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.team1 {
+border: #284B63;
+border-radius: 100%;
+width: auto;
+
+}
+.p1{
+    padding: 40px;
+    color: gray;
+}
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0); /* The image width */
+    }
+}
+.scroll-container div {
+    height: 400px;
+    min-width: 300px;
+    margin-left: 100px;
+    animation: slide 25s linear infinite;
 }
